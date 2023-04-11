@@ -8,8 +8,17 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		int count = 0;
+		int decrement = 1;
 
+		for (int i = 100; i >= 0; i -= decrement) {
+			System.out.print(i + " ");
+			count++;
 
+			if (count == 10) {
+				decrement++;
+				count = 0;
+			}
+		}
 	}
 }
